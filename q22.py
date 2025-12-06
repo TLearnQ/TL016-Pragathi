@@ -19,4 +19,4 @@ def split_by_key(input_file, key_name, output_dir):
     for value, data in groups.items():
         path = os.path.join(output_dir, f"{value}.json")
         with open(path, "w") as f:
-            json.dump(data, f, i
+            json.dump(data, f, i)
