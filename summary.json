@@ -1,0 +1,127 @@
+{
+  "total_endpoints": 10,
+  "endpoints_with_responses": 10,
+  "endpoints_without_responses": 0,
+  "coverage_percent": 100.0,
+  "http_method_counts": {
+    "GET": 3,
+    "POST": 1,
+    "PUT": 2,
+    "PATCH": 2,
+    "DELETE": 2
+  },
+  "request_response_map": {
+    "GET /{afId}/subscriptions": [
+      "200",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "406",
+      "429",
+      "500",
+      "503",
+      "default"
+    ],
+    "POST /{afId}/subscriptions": [
+      "201",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "503",
+      "default"
+    ],
+    "GET /{afId}/subscriptions/{subscriptionId}": [
+      "200",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "406",
+      "429",
+      "500",
+      "503",
+      "default"
+    ],
+    "PUT /{afId}/subscriptions/{subscriptionId}": [
+      "200",
+      "204",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "503",
+      "default"
+    ],
+    "PATCH /{afId}/subscriptions/{subscriptionId}": [
+      "200",
+      "204",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "503",
+      "default"
+    ],
+    "DELETE /{afId}/subscriptions/{subscriptionId}": [
+      "204",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "429",
+      "500",
+      "503",
+      "default"
+    ],
+    "PUT /{className}={id}": [
+      "200",
+      "201",
+      "204",
+      "default"
+    ],
+    "GET /{className}={id}": [
+      "200",
+      "default"
+    ],
+    "PATCH /{className}={id}": [
+      "200",
+      "204",
+      "default"
+    ],
+    "DELETE /{className}={id}": [
+      "200",
+      "default"
+    ]
+  },
+  "global_auth_methods": [
+    "oAuth2ClientCredentials"
+  ],
+  "used_operation_security": {}
+}
