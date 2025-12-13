@@ -1,0 +1,16 @@
+# OpenAPI 3GPP Parser
+
+# Description
+This project programmatically fetches and parses 3GPP OpenAPI YAML
+specifications, extracts endpoint metadata, and produces coverage
+and summary reports.
+
+# created
+logger setup, client api, parse openai
+
+
+# Outputs
+- metadata.json
+- summary.json
+- output.csv
+
