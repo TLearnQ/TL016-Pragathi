@@ -1,0 +1,674 @@
+[
+  {
+    "api_name": "3gpp-service-parameter",
+    "source_file": "https://forge.3gpp.org/rep/all/5G_APIs/-/raw/REL-18/TS29522_ServiceParameter.yaml",
+    "path": "/{afId}/subscriptions",
+    "method": "GET",
+    "summary": "read all of the active subscriptions for the AF",
+    "description": "",
+    "parameters": [
+      {
+        "name": "gpsis",
+        "in": "query",
+        "required": false,
+        "schema_type": "array"
+      },
+      {
+        "name": "ip-addrs",
+        "in": "query",
+        "required": false,
+        "schema_type": "array"
+      },
+      {
+        "name": "ip-domain",
+        "in": "query",
+        "required": false,
+        "schema_type": "string"
+      },
+      {
+        "name": "mac-addrs",
+        "in": "query",
+        "required": false,
+        "schema_type": "array"
+      },
+      {
+        "name": "afId",
+        "in": "path",
+        "required": true,
+        "schema_type": "string"
+      }
+    ],
+    "responses": {
+      "200": {
+        "description": "OK.",
+        "content": [
+          "application/json"
+        ]
+      },
+      "307": {
+        "description": "",
+        "content": []
+      },
+      "308": {
+        "description": "",
+        "content": []
+      },
+      "400": {
+        "description": "",
+        "content": []
+      },
+      "401": {
+        "description": "",
+        "content": []
+      },
+      "403": {
+        "description": "",
+        "content": []
+      },
+      "404": {
+        "description": "",
+        "content": []
+      },
+      "406": {
+        "description": "",
+        "content": []
+      },
+      "429": {
+        "description": "",
+        "content": []
+      },
+      "500": {
+        "description": "",
+        "content": []
+      },
+      "503": {
+        "description": "",
+        "content": []
+      },
+      "default": {
+        "description": "",
+        "content": []
+      }
+    },
+    "security": null
+  },
+  {
+    "api_name": "3gpp-service-parameter",
+    "source_file": "https://forge.3gpp.org/rep/all/5G_APIs/-/raw/REL-18/TS29522_ServiceParameter.yaml",
+    "path": "/{afId}/subscriptions",
+    "method": "POST",
+    "summary": "Creates a new subscription resource",
+    "description": "",
+    "parameters": [
+      {
+        "name": "afId",
+        "in": "path",
+        "required": true,
+        "schema_type": "string"
+      }
+    ],
+    "responses": {
+      "201": {
+        "description": "Created (Successful creation of subscription)",
+        "content": [
+          "application/json"
+        ]
+      },
+      "400": {
+        "description": "",
+        "content": []
+      },
+      "401": {
+        "description": "",
+        "content": []
+      },
+      "403": {
+        "description": "",
+        "content": []
+      },
+      "404": {
+        "description": "",
+        "content": []
+      },
+      "411": {
+        "description": "",
+        "content": []
+      },
+      "413": {
+        "description": "",
+        "content": []
+      },
+      "415": {
+        "description": "",
+        "content": []
+      },
+      "429": {
+        "description": "",
+        "content": []
+      },
+      "500": {
+        "description": "",
+        "content": []
+      },
+      "503": {
+        "description": "",
+        "content": []
+      },
+      "default": {
+        "description": "",
+        "content": []
+      }
+    },
+    "security": null
+  },
+  {
+    "api_name": "3gpp-service-parameter",
+    "source_file": "https://forge.3gpp.org/rep/all/5G_APIs/-/raw/REL-18/TS29522_ServiceParameter.yaml",
+    "path": "/{afId}/subscriptions/{subscriptionId}",
+    "method": "GET",
+    "summary": "read an active subscriptions for the SCS/AS and the subscription Id",
+    "description": "",
+    "parameters": [
+      {
+        "name": "afId",
+        "in": "path",
+        "required": true,
+        "schema_type": "string"
+      },
+      {
+        "name": "subscriptionId",
+        "in": "path",
+        "required": true,
+        "schema_type": "string"
+      }
+    ],
+    "responses": {
+      "200": {
+        "description": "OK (Successful get the active subscription)",
+        "content": [
+          "application/json"
+        ]
+      },
+      "307": {
+        "description": "",
+        "content": []
+      },
+      "308": {
+        "description": "",
+        "content": []
+      },
+      "400": {
+        "description": "",
+        "content": []
+      },
+      "401": {
+        "description": "",
+        "content": []
+      },
+      "403": {
+        "description": "",
+        "content": []
+      },
+      "404": {
+        "description": "",
+        "content": []
+      },
+      "406": {
+        "description": "",
+        "content": []
+      },
+      "429": {
+        "description": "",
+        "content": []
+      },
+      "500": {
+        "description": "",
+        "content": []
+      },
+      "503": {
+        "description": "",
+        "content": []
+      },
+      "default": {
+        "description": "",
+        "content": []
+      }
+    },
+    "security": null
+  },
+  {
+    "api_name": "3gpp-service-parameter",
+    "source_file": "https://forge.3gpp.org/rep/all/5G_APIs/-/raw/REL-18/TS29522_ServiceParameter.yaml",
+    "path": "/{afId}/subscriptions/{subscriptionId}",
+    "method": "PUT",
+    "summary": "Fully updates/replaces an existing subscription resource",
+    "description": "",
+    "parameters": [
+      {
+        "name": "afId",
+        "in": "path",
+        "required": true,
+        "schema_type": "string"
+      },
+      {
+        "name": "subscriptionId",
+        "in": "path",
+        "required": true,
+        "schema_type": "string"
+      }
+    ],
+    "responses": {
+      "200": {
+        "description": "OK (Successful update of the subscription)",
+        "content": [
+          "application/json"
+        ]
+      },
+      "204": {
+        "description": "OK (Successful update of the subscription)",
+        "content": []
+      },
+      "307": {
+        "description": "",
+        "content": []
+      },
+      "308": {
+        "description": "",
+        "content": []
+      },
+      "400": {
+        "description": "",
+        "content": []
+      },
+      "401": {
+        "description": "",
+        "content": []
+      },
+      "403": {
+        "description": "",
+        "content": []
+      },
+      "404": {
+        "description": "",
+        "content": []
+      },
+      "411": {
+        "description": "",
+        "content": []
+      },
+      "413": {
+        "description": "",
+        "content": []
+      },
+      "415": {
+        "description": "",
+        "content": []
+      },
+      "429": {
+        "description": "",
+        "content": []
+      },
+      "500": {
+        "description": "",
+        "content": []
+      },
+      "503": {
+        "description": "",
+        "content": []
+      },
+      "default": {
+        "description": "",
+        "content": []
+      }
+    },
+    "security": null
+  },
+  {
+    "api_name": "3gpp-service-parameter",
+    "source_file": "https://forge.3gpp.org/rep/all/5G_APIs/-/raw/REL-18/TS29522_ServiceParameter.yaml",
+    "path": "/{afId}/subscriptions/{subscriptionId}",
+    "method": "PATCH",
+    "summary": "Partial updates/replaces an existing subscription resource",
+    "description": "",
+    "parameters": [
+      {
+        "name": "afId",
+        "in": "path",
+        "required": true,
+        "schema_type": "string"
+      },
+      {
+        "name": "subscriptionId",
+        "in": "path",
+        "required": true,
+        "schema_type": "string"
+      }
+    ],
+    "responses": {
+      "200": {
+        "description": "OK. The subscription was modified successfully.",
+        "content": [
+          "application/json"
+        ]
+      },
+      "204": {
+        "description": "OK. The subscription was modified successfully.",
+        "content": []
+      },
+      "307": {
+        "description": "",
+        "content": []
+      },
+      "308": {
+        "description": "",
+        "content": []
+      },
+      "400": {
+        "description": "",
+        "content": []
+      },
+      "401": {
+        "description": "",
+        "content": []
+      },
+      "403": {
+        "description": "",
+        "content": []
+      },
+      "404": {
+        "description": "",
+        "content": []
+      },
+      "411": {
+        "description": "",
+        "content": []
+      },
+      "413": {
+        "description": "",
+        "content": []
+      },
+      "415": {
+        "description": "",
+        "content": []
+      },
+      "429": {
+        "description": "",
+        "content": []
+      },
+      "500": {
+        "description": "",
+        "content": []
+      },
+      "503": {
+        "description": "",
+        "content": []
+      },
+      "default": {
+        "description": "",
+        "content": []
+      }
+    },
+    "security": null
+  },
+  {
+    "api_name": "3gpp-service-parameter",
+    "source_file": "https://forge.3gpp.org/rep/all/5G_APIs/-/raw/REL-18/TS29522_ServiceParameter.yaml",
+    "path": "/{afId}/subscriptions/{subscriptionId}",
+    "method": "DELETE",
+    "summary": "Deletes an already existing subscription",
+    "description": "",
+    "parameters": [
+      {
+        "name": "afId",
+        "in": "path",
+        "required": true,
+        "schema_type": "string"
+      },
+      {
+        "name": "subscriptionId",
+        "in": "path",
+        "required": true,
+        "schema_type": "string"
+      }
+    ],
+    "responses": {
+      "204": {
+        "description": "No Content (Successful deletion of the existing subscription)",
+        "content": []
+      },
+      "307": {
+        "description": "",
+        "content": []
+      },
+      "308": {
+        "description": "",
+        "content": []
+      },
+      "400": {
+        "description": "",
+        "content": []
+      },
+      "401": {
+        "description": "",
+        "content": []
+      },
+      "403": {
+        "description": "",
+        "content": []
+      },
+      "404": {
+        "description": "",
+        "content": []
+      },
+      "429": {
+        "description": "",
+        "content": []
+      },
+      "500": {
+        "description": "",
+        "content": []
+      },
+      "503": {
+        "description": "",
+        "content": []
+      },
+      "default": {
+        "description": "",
+        "content": []
+      }
+    },
+    "security": null
+  },
+  {
+    "api_name": "Provisioning MnS",
+    "source_file": "https://forge.3gpp.org/rep/all/5G_APIs/-/raw/REL-18/TS28532_ProvMnS.yaml",
+    "path": "/{className}={id}",
+    "method": "PUT",
+    "summary": "Replaces a complete single resource or creates it if it does not exist",
+    "description": "With HTTP PUT a complete resource is replaced or created if it does not exist. The target resource is identified by the target URI.",
+    "parameters": [
+      {
+        "name": "className",
+        "in": "path",
+        "required": true,
+        "schema_type": "string"
+      },
+      {
+        "name": "id",
+        "in": "path",
+        "required": true,
+        "schema_type": "string"
+      }
+    ],
+    "responses": {
+      "200": {
+        "description": "Success case (\"200 OK\"). This status code shall be returned when the resource is replaced, and when the replaced resource representation is not identical to the resource representation in the request. This status code may be returned when the resource is updated and when the updated resource representation is identical to the resource representation in the request. The representation of the updated resource is returned in the response message body.",
+        "content": [
+          "application/json"
+        ]
+      },
+      "201": {
+        "description": "Success case (\"201 Created\"). This status code shall be returned when the resource is created. The representation of the created resource is returned in the response message body.",
+        "content": [
+          "application/json"
+        ]
+      },
+      "204": {
+        "description": "Success case (\"204 No Content\"). This status code may be returned only when the replaced resource representation is identical to the representation in the request. The response has no message body.",
+        "content": []
+      },
+      "default": {
+        "description": "Error case.",
+        "content": [
+          "application/json"
+        ]
+      }
+    },
+    "security": null
+  },
+  {
+    "api_name": "Provisioning MnS",
+    "source_file": "https://forge.3gpp.org/rep/all/5G_APIs/-/raw/REL-18/TS28532_ProvMnS.yaml",
+    "path": "/{className}={id}",
+    "method": "GET",
+    "summary": "Reads one or multiple resources",
+    "description": "With HTTP GET resources are read. The resources to be retrieved are identified with the target URI. The attributes and fields parameter of the query components allow to select the resource properties to be returned.",
+    "parameters": [
+      {
+        "name": "scope",
+        "in": "query",
+        "required": false,
+        "schema_type": null
+      },
+      {
+        "name": "filter",
+        "in": "query",
+        "required": false,
+        "schema_type": null
+      },
+      {
+        "name": "attributes",
+        "in": "query",
+        "required": false,
+        "schema_type": "array"
+      },
+      {
+        "name": "fields",
+        "in": "query",
+        "required": false,
+        "schema_type": "array"
+      },
+      {
+        "name": "dataNodeSelector",
+        "in": "query",
+        "required": false,
+        "schema_type": null
+      },
+      {
+        "name": "className",
+        "in": "path",
+        "required": true,
+        "schema_type": "string"
+      },
+      {
+        "name": "id",
+        "in": "path",
+        "required": true,
+        "schema_type": "string"
+      }
+    ],
+    "responses": {
+      "200": {
+        "description": "Success case (\"200 OK\"). The resources identified in the request for retrieval are returned in the response message body. In case the attributes or fields query parameters are used, only the selected attributes or sub-attributes are returned. The response message body is constructed according to the hierarchical response construction method (TS 32.158 [15]).",
+        "content": [
+          "application/json",
+          "application/vnd.3gpp.object-tree-hierarchical+json",
+          "application/vnd.3gpp.object-tree-flat+json"
+        ]
+      },
+      "default": {
+        "description": "Error case.",
+        "content": [
+          "application/json"
+        ]
+      }
+    },
+    "security": null
+  },
+  {
+    "api_name": "Provisioning MnS",
+    "source_file": "https://forge.3gpp.org/rep/all/5G_APIs/-/raw/REL-18/TS28532_ProvMnS.yaml",
+    "path": "/{className}={id}",
+    "method": "PATCH",
+    "summary": "Patches one or multiple resources",
+    "description": "With HTTP PATCH resources are created, updated or deleted. The resources to be modified are identified with the target URI (base resource) and the patch document included in the request message body.",
+    "parameters": [
+      {
+        "name": "className",
+        "in": "path",
+        "required": true,
+        "schema_type": "string"
+      },
+      {
+        "name": "id",
+        "in": "path",
+        "required": true,
+        "schema_type": "string"
+      }
+    ],
+    "responses": {
+      "200": {
+        "description": "Success case (\"200 OK\"). This status code is returned when the updated the resource representations shall be returned for some reason. The resource representations are returned in the response message body. The response message body is constructed according to the hierarchical response construction method (TS 32.158 [15])",
+        "content": [
+          "application/json"
+        ]
+      },
+      "204": {
+        "description": "Success case (\"204 No Content\"). This status code is returned when there is no need to return the updated resource representations. The response message body is empty.",
+        "content": []
+      },
+      "default": {
+        "description": "Error case.",
+        "content": [
+          "application/json"
+        ]
+      }
+    },
+    "security": null
+  },
+  {
+    "api_name": "Provisioning MnS",
+    "source_file": "https://forge.3gpp.org/rep/all/5G_APIs/-/raw/REL-18/TS28532_ProvMnS.yaml",
+    "path": "/{className}={id}",
+    "method": "DELETE",
+    "summary": "Deletes one resource",
+    "description": "With HTTP DELETE one resource is deleted. The resources to be deleted is identified with the target URI.",
+    "parameters": [
+      {
+        "name": "className",
+        "in": "path",
+        "required": true,
+        "schema_type": "string"
+      },
+      {
+        "name": "id",
+        "in": "path",
+        "required": true,
+        "schema_type": "string"
+      }
+    ],
+    "responses": {
+      "200": {
+        "description": "Success case (\"200 OK\"). This status code is returned, when the resource has been successfully deleted. The response body is empty.",
+        "content": []
+      },
+      "default": {
+        "description": "Error case.",
+        "content": [
+          "application/json"
+        ]
+      }
+    },
+    "security": null
+  }
+]
